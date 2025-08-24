@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Focus of Our Research</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #f7f7f7;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url("/mnt/data/9a386fba-8ae8-4705-93eb-670370a373d5.png");
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .section {
+      padding: 60px 10%;
+      background-color: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 6px solid #0073e6;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #0056b3;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+        padding: 0 20px;
+        text-align: center;
+      }
+    }
+
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #000000;
+ 
+  /* position: sticky;
+  z-index: 999;
+  top: 0; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo .text h1 {
+  font-size: 1.4rem;
+  color: #003865;
+}
+
+.logo .text p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #003865;
+}
+
+/* Dropdown menu tinh tế */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 240px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Mở mượt */
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: background 0.2s, color 0.2s;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+}
+
+.dropdown-menu li a::before {
+  content: "›";
+  color: #888;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f6ff;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Dropdown menu tinh tế */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 240px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* --- Dropdown styles --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li {
+  position: relative;
+}
+.video {
+   /* flex: 1 1 560px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+.video iframe {
+  /* width: 80%;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+   width: 80%; /* Hoặc dùng giá trị cố định như 640px nếu muốn */
+  max-width: 720px;
+  height: 405px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-top: 5px solid #002f5f;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 18px;
+  color: #002f5f;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #002f5f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer p, .footer li {
+  font-size: 15px;
+  color: #002f5f;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icons img {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #002f5f;
+  font-size: 15px;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./image/logokiel.png" alt="Logo" />
+      <div class="text">
+        <h1>Fachhochschule Kiel</h1>
+        <p>University of Applied Sciences</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./main.html">Home</a></li>
+        <li><a href="./degree.html">Degree courses</a></li>
+       <li class="dropdown">
+  <a href="#" id="international-btn">International</a>
+  <ul class="dropdown-menu" id="international-dropdown">
+    <li><a href="inter.html#overview">Overview</a></li>
+    <li><a href="inter.html#programs">International Courses</a></li>
+    <li><a href="inter.html#support">Student Support</a></li>
+    <li><a href="inter.html#apply">Application</a></li>
+  </ul>
+</li>
+        <li><a href="./city.html">Our city</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <span class="search-icon">🔍</span>
+      <span class="lang-switch">DE</span>
+    </div>
+  </header>
+
+<div class="video">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/racqKxrCG-g?si=kJ1IOK3_FPVt4xDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <h2>Intelligent Mobility</h2>
+        <p>We develop autonomous, electric, and AI-driven transport systems to create a future of safe, clean, and efficient mobility. From smart traffic solutions to next-gen vehicles, we connect innovation with sustainability.</p>
+      </div>
+      <div class="card">
+        <h2>Sustainable Energy</h2>
+        <p>Our focus lies in transforming energy systems through research in renewables like wind, solar, and hydrogen. We aim to optimize energy storage, grid efficiency, and accelerate the global transition to clean energy.</p>
+      </div>
+      <div class="card">
+        <h2>Maritime Systems</h2>
+        <p>With advanced research in shipbuilding, automation, and ocean engineering, we partner with global maritime industries to innovate sustainable and autonomous marine technologies.</p>
+      </div>
+      <div class="card">
+        <h2>Digital Transformation</h2>
+        <p>Our interdisciplinary teams lead in AI, data science, and cybersecurity to ensure that digital innovation supports ethical, inclusive, and secure progress in all sectors of society.</p>
+      </div>
+      <div class="card">
+        <h2>Sustainable Value Creation</h2>
+        <p>We empower businesses and industries with circular economy principles, responsible production models, and innovation strategies that respect both people and planet.</p>
+      </div>
+      <div class="card">
+        <h2>Social Participation</h2>
+        <p>Through social science and policy-driven research, we ensure every voice is heard. Our focus on inclusion, equity, and democratic participation helps shape fair and resilient communities.</p>
+      </div>
+    </div>
+
+
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Fachhochschule Kiel<br>
+      University of Applied Sciences<br>
+      Sokratesplatz 1<br>
+      24149 Kiel</p>
+      <p>Telefon: 0431 210-0<br>
+      Telefax: 0431 210-1900<br>
+      E-Mail: info@fh-kiel.de</p>
+      
+    </div>
+
+    <div class="footer-column">
+      <h3>Faculties</h3>
+      <div class="footer-links">
+        <a href="./degree.html">Faculty of Agriculture</a>
+        <a href="./degree.html">Faculty of Computer Science and Electrical Engineering</a>
+        <a href="./degree.html">Faculty of Mechanical Engineering</a>
+        <a href="./degree.html">Faculty of Media</a>
+        <a href="./degree.html">Faculty of Social Work and Health</a>
+        <a href="./degree.html">Faculty of Business Management</a>
+        <a href="./degree.html">Faculty of Nursing and Physiotherapy</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quicklinks for Students</h3>
+      <div class="footer-links">
+        <a href="inter.html#apply">Application</a>
+        <a href="inter.html#overview">Overview</a>
+        <a href="inter.html#support">Information for internationals</a>
+        <a href="inter.html#faq">Questions</a>
+        <a href="./degree.html">Degree</a>
+        <a href="./focus.html">Moodle Teaching</a>
+        <a href="./future.html">Moodle Collaboration</a>
+        <a href="./city.html">City</a>
+        <a href="city.html#weather">Weather</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Service</h3>
+      <div class="footer-links">
+        <a href="#">Dual-study programs</a>
+        <a href="#">Disabilities and/or long-term health conditions</a>
+        <a href="#">FH Shop</a>
+        <a href="#">myuniboard</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </section>
+
+  <script>
+    // dropdown inter 
+
+
+
+
+  const btn = document.getElementById("international-btn");
+  const dropdownItem = btn.closest(".dropdown");
+  const dropdownMenu = document.getElementById("international-dropdown");
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    dropdownItem.classList.toggle("open");
+  });
+
+  document.addEventListener("click", function () {
+    dropdownItem.classList.remove("open");
+  });
+  </script>
+</body>
+</html>

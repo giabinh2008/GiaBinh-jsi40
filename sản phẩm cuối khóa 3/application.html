@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply to Kiel University</title>
+  <link rel="stylesheet" href="./application.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./image/logokiel.png" alt="Logo" />
+      <div class="text">
+        <h1>Fachhochschule Kiel</h1>
+        <p>University of Applied Sciences</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./main.html">Home</a></li>
+        <li><a href="./degree.html">Degree courses</a></li>
+       <li class="dropdown">
+  <a href="#" id="international-btn">International</a>
+  <ul class="dropdown-menu" id="international-dropdown">
+    <li><a href="inter.html#overview">Overview</a></li>
+    <li><a href="inter.html#programs">International Courses</a></li>
+    <li><a href="inter.html#support">Student Support</a></li>
+    <li><a href="inter.html#apply">Application</a></li>
+  </ul>
+</li>
+        <li><a href="./city.html">Our city</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <span class="search-icon">🔍</span>
+      <span class="lang-switch">DE</span>
+    </div>
+  </header>
+
+  
+  
+  
+  <div class="container">
+    <h1>Kiel University of Applied sciences Application Portal</h1>
+    <form id="applicationForm">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="program">Program of Study:</label>
+        <select id="program" name="program">
+          <option value="">-- Select a Program --</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Business Informatics">Business Informatics</option>
+          <option value="Biomedical Engineering">Biomedical Engineering</option>
+          <option value="Marine Biology">Marine Biology</option>
+          <option value="Industrial Engineering">Industrial Engineering</option>
+<option value="Media and Communication Studies">Media and Communication Studies</option>
+<option value="Cyber Security">Cyber Security</option>
+<option value="Mechatronics">Mechatronics</option>
+<option value="Astronomy">Astronomy</option>
+<option value="Health Sciences">Health Sciences</option>
+<option value="Pharmaceutical Sciences">Pharmaceutical Sciences</option>
+<option value="Agricultural Sciences">Agricultural Sciences</option>
+<option value="Tourism Management">Tourism Management</option>
+<option value="Hotel and Hospitality Management">Hotel and Hospitality Management</option>
+<option value="Fashion Design">Fashion Design</option>
+<option value="Interior Architecture">Interior Architecture</option>
+<option value="Social Work">Social Work</option>
+<option value="Psychology">Psychology</option>
+<option value="Sociology">Sociology</option>
+<option value="Political Science">Political Science</option>
+<option value="Linguistics">Linguistics</option>
+<option value="Education">Education</option>
+<option value="Cognitive Science">Cognitive Science</option>
+<option value="International Law">International Law</option>
+<option value="Mechanical Engineering">Mechanical Engineering</option>
+<option value="Business Administration">Business Administration</option>
+<option value="Electrical Engineering">Electrical Engineering</option>
+<option value="Biomedical Engineering">Biomedical Engineering</option>
+<option value="Physics">Physics</option>
+<option value="Mathematics">Mathematics</option>
+<option value="Data Science">Data Science</option>
+<option value="Civil Engineering">Civil Engineering</option>
+<option value="Architecture">Architecture</option>
+<option value="Environmental Engineering">Environmental Engineering</option>
+<option value="Chemical Engineering">Chemical Engineering</option>
+<option value="Economics">Economics</option>
+<option value="International Business">International Business</option>
+<option value="Artificial Intelligence">Artificial Intelligence</option>
+<option value="Marine Biology">Marine Biology</option>
+<option value="Renewable Energy Systems">Renewable Energy Systems</option>
+<option value="Robotics and Automation">Robotics and Automation</option>
+<option value="Biotechnology">Biotechnology</option>
+<option value="Digital Media">Digital Media</option>
+<option value="Game Design and Development">Game Design and Development</option>
+<option value="Business Informatics">Business Informatics</option>
+<option value="Logistics and Supply Chain Management">Logistics and Supply Chain Management</option>
+<option value="International Relations">International Relations</option>
+<option value="German Language and Culture">German Language and Culture</option>
+<option value="Artificial Intelligence Engineering">Artificial Intelligence Engineering</option>
+<option value="Information Systems">Information Systems</option>
+<option value="Machine Learning">Machine Learning</option>
+<option value="Software Engineering">Software Engineering</option>
+<option value="Blockchain Technology">Blockchain Technology</option>
+<option value="Energy Management">Energy Management</option>
+<option value="Sustainable Engineering">Sustainable Engineering</option>
+<option value="Environmental Sciences">Environmental Sciences</option>
+<option value="Geoinformatics">Geoinformatics</option>
+<option value="Geology">Geology</option>
+<option value="Meteorology">Meteorology</option>
+<option value="Hydrology">Hydrology</option>
+<option value="Marine Engineering">Marine Engineering</option>
+<option value="Automotive Engineering">Automotive Engineering</option>
+<option value="Aerospace Engineering">Aerospace Engineering</option>
+<option value="Nuclear Engineering">Nuclear Engineering</option>
+<option value="Material Sciences">Material Sciences</option>
+<option value="Food Technology">Food Technology</option>
+<option value="Agribusiness">Agribusiness</option>
+<option value="Veterinary Medicine">Veterinary Medicine</option>
+<option value="Medicine">Medicine</option>
+<option value="Dentistry">Dentistry</option>
+<option value="Nursing Science">Nursing Science</option>
+<option value="Public Health">Public Health</option>
+<option value="Human Biology">Human Biology</option>
+<option value="Microbiology">Microbiology</option>
+<option value="Molecular Biology">Molecular Biology</option>
+<option value="Bioinformatics">Bioinformatics</option>
+<option value="Nanotechnology">Nanotechnology</option>
+<option value="Quantum Engineering">Quantum Engineering</option>
+<option value="Photonics">Photonics</option>
+<option value="Actuarial Science">Actuarial Science</option>
+<option value="Finance and Accounting">Finance and Accounting</option>
+<option value="Banking and Insurance">Banking and Insurance</option>
+<option value="Real Estate Management">Real Estate Management</option>
+<option value="Supply Chain Technology">Supply Chain Technology</option>
+<option value="Entrepreneurship">Entrepreneurship</option>
+<option value="E-Commerce">E-Commerce</option>
+<option value="Marketing and Sales">Marketing and Sales</option>
+<option value="Digital Business">Digital Business</option>
+<option value="Event Management">Event Management</option>
+<option value="Film and Television Studies">Film and Television Studies</option>
+<option value="Animation and Visual Effects">Animation and Visual Effects</option>
+<option value="Musicology">Musicology</option>
+<option value="Philosophy">Philosophy</option>
+<option value="History of Art">History of Art</option>
+<option value="Comparative Literature">Comparative Literature</option>
+<option value="Translation and Interpretation">Translation and Interpretation</option>
+<option value="Theology">Theology</option>
+
+
+
+
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Upload Passport Photo:</label>
+        <input type="file" id="photo" accept="image/*" required />
+      </div>
+
+      <div class="form-group">
+        <label for="motivation">Motivation Letter (PDF):</label>
+        <input type="file" id="motivation" accept="application/pdf" required />
+      </div>
+
+      <div class="form-group">
+        <label for="documents">Academic Documents (PDF/ZIP):</label>
+        <input type="file" id="documents" accept=".pdf,.zip" multiple required />
+      </div>
+
+      <div class="form-group">
+        <label for="hsDiploma">High School Diploma (PDF):</label>
+        <input type="file" id="hsDiploma" accept="application/pdf" required />
+      </div>
+
+      <div class="form-group">
+        <label for="finalGrades">National Graduation Exam Results (PDF):</label>
+        <input type="file" id="finalGrades" accept="application/pdf" required />
+      </div>
+
+      <div class="form-group">
+        <label for="gpaDetails">GPA Details (per Subject - PDF):</label>
+        <input type="file" id="gpaDetails" accept="application/pdf" required />
+      </div>
+
+      <div class="form-group">
+        <label for="extracurricular">Extracurricular Activities (PDF):</label>
+        <input type="file" id="extracurricular" accept="application/pdf" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div class="form-group">
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required />
+      </div>
+
+      <div class="form-group">
+        <label for="language">English Proficiency Certificate (PDF):</label>
+        <input type="file" id="language" accept="application/pdf" required />
+      </div>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <div class="submitted" id="submittedData">
+      <h2>Your Submitted Application:</h2>
+      <pre id="output"></pre>
+    </div>
+  </div>
+
+  <script src="application.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện số</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    
+  <header>
+    <div class="logo">
+      <img src="./image/logokiel.png" alt="Logo" />
+      <div class="text">
+        <h1>Fachhochschule Kiel</h1>
+        <p>University of Applied Sciences</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./main.html">Home</a></li>
+        <li><a href="./degree.html">Degree courses</a></li>
+       <li class="dropdown">
+  <a href="#" id="international-btn">International</a>
+  <ul class="dropdown-menu" id="international-dropdown">
+    <li><a href="inter.html#overview">Overview</a></li>
+    <li><a href="inter.html#programs">International Courses</a></li>
+    <li><a href="inter.html#support">Student Support</a></li>
+    <li><a href="inter.html#apply">Application</a></li>
+  </ul>
+</li>
+        <li><a href="./city.html">Our city</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <span class="search-icon">🔍</span>
+      <span class="lang-switch">DE</span>
+    </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="header2">
+        <h1>📚 Online Library</h1>
+        <input type="text" id="searchInput" placeholder="Tìm sách...">
+        <button id="searchBtn" class="">Tìm kiếm</button>
+    </div>
+
+    <main id="bookList">
+        <!-- Sách sẽ được JS tạo ở đây -->
+    </main>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Fachhochschule Kiel<br>
+      University of Applied Sciences<br>
+      Sokratesplatz 1<br>
+      24149 Kiel</p>
+      <p>Telefon: 0431 210-0<br>
+      Telefax: 0431 210-1900<br>
+      E-Mail: info@fh-kiel.de</p>
+     
+    </div>
+
+    <div class="footer-column">
+      <h3>Faculties</h3>
+      <div class="footer-links">
+        <a href="./degree.html">Faculty of Agriculture</a>
+        <a href="./degree.html">Faculty of Computer Science and Electrical Engineering</a>
+        <a href="./degree.html">Faculty of Mechanical Engineering</a>
+        <a href="./degree.html">Faculty of Media</a>
+        <a href="./degree.html">Faculty of Social Work and Health</a>
+        <a href="./degree.html">Faculty of Business Management</a>
+        <a href="./degree.html">Faculty of Nursing and Physiotherapy</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quicklinks for Students</h3>
+      <div class="footer-links">
+        <a href="inter.html#apply">Application</a>
+        <a href="inter.html#overview">Overview</a>
+        <a href="inter.html#support">Information for internationals</a>
+        <a href="inter.html#faq">Questions</a>
+        <a href="./degree.html">Degree</a>
+        <a href="./focus.html">Moodle Teaching</a>
+        <a href="./future.html">Moodle Collaboration</a>
+        <a href="./city.html">City</a>
+        <a href="city.html#weather">Weather</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Service</h3>
+      <div class="footer-links">
+        <a href="#">Dual-study programs</a>
+        <a href="#">Disabilities and/or long-term health conditions</a>
+        <a href="#">FH Shop</a>
+        <a href="#">myuniboard</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="library.js"></script>
+</body>
+</html>

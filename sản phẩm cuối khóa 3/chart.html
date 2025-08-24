@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Statistics</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .chart-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    canvas {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📊 Admission Statistics by Major</h2>
+  <div class="chart-container">
+    <canvas id="admissionChart"></canvas>
+  </div>
+
+  <script>
+    const admissionStats = [
+      {
+        major: "Computer Science",
+        applicants: 850,
+        admitted: 120,
+        male: 75,
+        female: 45,
+        international: 30
+      },
+      {
+        major: "Mechanical Engineering",
+        applicants: 720,
+        admitted: 110,
+        male: 90,
+        female: 20,
+        international: 25
+      },
+      {
+        major: "Business Informatics",
+        applicants: 650,
+        admitted: 100,
+        male: 60,
+        female: 40,
+        international: 35
+      },
+      {
+        major: "Biotechnology",
+        applicants: 580,
+        admitted: 80,
+        male: 35,
+        female: 45,
+        international: 20
+      }
+    ];
+
+    const labels = admissionStats.map(item => item.major);
+    const applicantsData = admissionStats.map(item => item.applicants);
+    const admittedData = admissionStats.map(item => item.admitted);
+
+    const ctx = document.getElementById('admissionChart').getContext('2d');
+    const admissionChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Applicants',
+            data: applicantsData,
+            backgroundColor: '#a2d2ff'
+          },
+          {
+            label: 'Admitted',
+            data: admittedData,
+            backgroundColor: '#219ebc'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Applicants vs Admitted per Major'
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

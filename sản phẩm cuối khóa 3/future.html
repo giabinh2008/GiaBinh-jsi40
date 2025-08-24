@@ -1,0 +1,434 @@
+<!-- HTML: Our study programmes - your future -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./image/logokiel.png" alt="Logo" />
+      <div class="text">
+        <h1>Fachhochschule Kiel</h1>
+        <p>University of Applied Sciences</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./main.html">Home</a></li>
+        <li><a href="./degree.html">Degree courses</a></li>
+        <li class="dropdown">
+  <a href="#" id="international-btn">International</a>
+  <ul class="dropdown-menu" id="international-dropdown">
+    <li><a href="inter.html#overview">Overview</a></li>
+    <li><a href="inter.html#programs">International Courses</a></li>
+    <li><a href="inter.html#support">Student Support</a></li>
+    <li><a href="inter.html#apply">Application</a></li>
+  </ul>
+</li>
+
+        <li><a href="./city.html">Our city</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <span class="search-icon">🔍</span>
+      <span class="lang-switch">DE</span>
+    </div>
+  </header>
+  
+  
+  
+  
+  <section class="study-programmes">
+  <div class="grid">
+    <div class="text-section">
+      <h2>Our study programmes – your future</h2>
+      <p class="subtitle">Bachelor’s and Master’s degree programmes at Kiel UAS</p>
+      <div class="content">
+        <p>In a world of rapid technological advancement and global interconnectedness, the demand for future-ready professionals is at an all-time high. Climate change, digital transformation, demographic shifts, and evolving labor markets are reshaping the skills employers value most. At Kiel UAS, we design our study programmes not just to meet current industry standards, but to anticipate the careers of tomorrow.</p>
+
+        <p>Whether you're interested in sustainable engineering, digital business, artificial intelligence, renewable energy, health sciences, or intercultural communication, our programmes are tailored to help you develop the knowledge, flexibility, and resilience you need to thrive in a globalized world.</p>
+
+        <p>Our practice-oriented approach means you won’t just learn theory – you’ll apply it in real projects, internships, and collaborations with businesses and research institutions. With strong ties to industries in Germany and across Europe, we ensure our graduates are equipped with the hands-on experience and professional network they need to succeed.</p>
+
+        <p>Kiel UAS is proud to be an inclusive and internationally focused university. Our English-taught programmes, welcoming student community, and modern campus facilities create an environment where students from all over the world feel at home. Here, your future isn’t just studied – it’s built.</p>
+
+        <p><strong>Key advantages of studying at Kiel UAS:</strong></p>
+        <ul>
+          <li>Cutting-edge curricula adapted to global trends</li>
+          <li>Highly employable graduates with international competencies</li>
+          <li>Excellent research facilities and applied science focus</li>
+          <li>Personalized learning with small class sizes</li>
+          <li>Access to Germany's innovation-driven economy</li>
+        </ul>
+
+        <p>Join us at Kiel UAS and be part of a future where education empowers change. Let’s shape your journey – and the world – together.</p>
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="./image/future1.jpg">
+      <img src="./image/future2.webp" alt="Kiel UAS Campus">
+    </div>
+  </div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Fachhochschule Kiel<br>
+      University of Applied Sciences<br>
+      Sokratesplatz 1<br>
+      24149 Kiel</p>
+      <p>Telefon: 0431 210-0<br>
+      Telefax: 0431 210-1900<br>
+      E-Mail: info@fh-kiel.de</p>
+      
+    </div>
+
+    <div class="footer-column">
+      <h3>Faculties</h3>
+      <div class="footer-links">
+        <a href="./degree.html">Faculty of Agriculture</a>
+        <a href="./degree.html">Faculty of Computer Science and Electrical Engineering</a>
+        <a href="./degree.html">Faculty of Mechanical Engineering</a>
+        <a href="./degree.html">Faculty of Media</a>
+        <a href="./degree.html">Faculty of Social Work and Health</a>
+        <a href="./degree.html">Faculty of Business Management</a>
+        <a href="./degree.html">Faculty of Nursing and Physiotherapy</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quicklinks for Students</h3>
+      <div class="footer-links">
+        <a href="inter.html#apply">Application</a>
+        <a href="inter.html#overview">Overview</a>
+        <a href="inter.html#support">Information for internationals</a>
+        <a href="inter.html#faq">Questions</a>
+        <a href="./degree.html">Degree</a>
+        <a href="./focus.html">Moodle Teaching</a>
+        <a href="./future.html">Moodle Collaboration</a>
+        <a href="./city.html">City</a>
+        <a href="city.html#weather">Weather</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Service</h3>
+      <div class="footer-links">
+        <a href="#">Dual-study programs</a>
+        <a href="#">Disabilities and/or long-term health conditions</a>
+        <a href="#">FH Shop</a>
+        <a href="#">myuniboard</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</section>
+
+<!-- CSS -->
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0
+  border-size:none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #000000;
+ 
+  /* position: sticky;
+  z-index: 999;
+  top: 0; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo .text h1 {
+  font-size: 1.4rem;
+  color: #003865;
+}
+
+.logo .text p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #003865;
+}
+
+
+.study-programmes {
+  background-color: #f4f7fa;
+  border-radius: 16px;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.study-programmes .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.study-programmes .text-section {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.study-programmes .image-section img {
+  width: 100%;
+  
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.study-programmes .image-section img:hover {
+  transform: scale(1.02);
+}
+
+.study-programmes h2 {
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #0d3b66;
+  margin-bottom: 10px;
+}
+
+.study-programmes .subtitle {
+  font-size: 1.2em;
+  color: #4f6d7a;
+  margin-bottom: 30px;
+}
+
+.study-programmes .content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1.05em;
+}
+
+.study-programmes .content ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.study-programmes .content li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .study-programmes .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Dropdown menu tinh tế */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 240px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Mở mượt */
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: background 0.2s, color 0.2s;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+}
+
+.dropdown-menu li a::before {
+  content: "›";
+  color: #888;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f6ff;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Dropdown menu tinh tế */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 240px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* --- Dropdown styles --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-top: 5px solid #002f5f;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 18px;
+  color: #002f5f;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #002f5f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer p, .footer li {
+  font-size: 15px;
+  color: #002f5f;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icons img {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #002f5f;
+  font-size: 15px;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+</style>
+<script>
+  // dropdown inter 
+
+
+
+
+  const btn = document.getElementById("international-btn");
+  const dropdownItem = btn.closest(".dropdown");
+  const dropdownMenu = document.getElementById("international-dropdown");
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    dropdownItem.classList.toggle("open");
+  });
+
+  document.addEventListener("click", function () {
+    dropdownItem.classList.remove("open");
+  });
+</script>
+</body>
+</html>
+
+
+
+

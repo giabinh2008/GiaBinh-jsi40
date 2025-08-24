@@ -1,0 +1,430 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+
+
+    
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #000000;
+ 
+  /* position: sticky;
+  z-index: 999;
+  top: 0; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo .text h1 {
+  font-size: 1.4rem;
+  color: #003865;
+}
+
+.logo .text p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #003865;
+}
+/* Dropdown menu tinh tế */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 240px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Mở mượt */
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: background 0.2s, color 0.2s;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+}
+
+.dropdown-menu li a::before {
+  content: "›";
+  color: #888;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f6ff;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Dropdown menu tinh tế */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 240px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* --- Dropdown styles --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+
+.our-city .hero {
+  background-image: url('./image/city1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+   
+  
+}
+
+.our-city .hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.our-city .hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.our-city .hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.content {
+  padding: 4rem 10%;
+  background: #fff;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  background: #eef5ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  color: #0055a5;
+  margin-bottom: 0.5rem;
+}
+
+.gallery {
+  margin-top: 4rem;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.testimonial {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f0f8ff;
+  border-left: 6px solid #0077cc;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  color: #005599;
+}
+
+.weather {
+  margin-top: 4rem;
+}
+
+.weather h2 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+
+.weather-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* hoặc 100vh nếu full màn */
+}
+
+main{
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    box-shadow: 0 30px 50px #5553;
+    padding: 30px;
+    box-sizing: border-box;
+    
+   
+}
+main form{
+    border: 1px solid #5552;
+    display: flex;
+    border-radius: 30px;
+}
+main form input, 
+main form button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main form i{
+    opacity: 0.7;
+}
+main .result{
+    padding-top: 20px;
+    text-align: center;
+}
+main .result .name{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .temperature img{
+    width: 150px;
+    filter: drop-shadow(0 10px 50px #555);
+}
+main .temperature figcaption{
+    font-size: 3em;
+}
+main .description{
+    padding: 10px 0 30px;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+main li{
+    background-color: #f78a55;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #0003 50%
+    );
+    font-weight: bold;
+    font-size: small;
+    
+}
+main ul li i{
+    font-size: 2em;
+    margin: 20px 0;
+    display: block!important;
+}
+main li:nth-child(2){
+    background-color: #b56291;
+}
+main li:nth-child(3){
+    background-color: #48567b;
+}
+main.error{
+    animation: errorEffect 0.3s linear 1;
+}
+@keyframes errorEffect{
+    0%{
+        transform: translate(10px, 5px)
+    }
+    25%{
+        transform: translate(-5px, 0)
+    }
+    50%{
+        transform: translate(8px, 2px)
+    }
+    75%{
+        transform: translate(-2px, 5px)
+    }
+    100%{
+        transform: translate(0, 0); 
+    }
+}
+.weather h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   font-size: 2rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-top: 5px solid #002f5f;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 18px;
+  color: #002f5f;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #002f5f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer p, .footer li {
+  font-size: 15px;
+  color: #002f5f;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icons img {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #002f5f;
+  font-size: 15px;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

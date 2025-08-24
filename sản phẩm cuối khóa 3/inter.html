@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International - Kiel University</title>
+  <link rel="stylesheet" href="./inter.css" />
+  <script defer src="./inter.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./image/logokiel.png" alt="Logo" />
+      <div class="text">
+        <h1>Fachhochschule Kiel</h1>
+        <p>University of Applied Sciences</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./main.html">Home</a></li>
+        <li><a href="./degree.html">Degree courses</a></li>
+        <li class="dropdown">
+  <a href="#" id="international-btn">International</a>
+  <ul class="dropdown-menu" id="international-dropdown">
+    <li><a href="inter.html#overview">Overview</a></li>
+    <li><a href="inter.html#programs">International Courses</a></li>
+    <li><a href="inter.html#support">Student Support</a></li>
+    <li><a href="inter.html#apply">Application</a></li>
+  </ul>
+</li>
+        <li><a href="./city.html">Our city</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <span class="search-icon">🔍</span>
+      <span class="lang-switch">DE</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>International at Kiel University</h1>
+    <p>Your gateway to a world-class education in Germany</p>
+    <a href="./application.html" class="cta-button">Apply Now</a>
+  </section>
+
+  <section id="overview" class="section">
+    <h2>Why Study at Kiel University?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Diverse Community</h3>
+        <p>Join students from over 100 countries in a multicultural learning environment.</p>
+      </div>
+      <div class="card">
+        <h3>Research Opportunities</h3>
+        <p>Participate in cutting-edge research across disciplines with renowned faculty.</p>
+      </div>
+      <div class="card">
+        <h3>Modern Campus</h3>
+        <p>Enjoy state-of-the-art facilities in the heart of northern Germany.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="section">
+    <h2>International Programs</h2>
+    <div class="grid">
+      <div class="program">
+        <h3>Bachelor in English</h3>
+        <p>Study core subjects like Engineering, Business, or Environmental Science entirely in English.</p>
+      </div>
+      <div class="program">
+        <h3>Master Degrees</h3>
+        <p>Join our English-taught Master's programs in Data Science, Economics, or Marine Biology.</p>
+      </div>
+      <div class="program">
+        <h3>Exchange & Erasmus+</h3>
+        <p>Spend a semester or year at Kiel with our partner universities worldwide.</p>
+      </div>
+    </div>
+
+<a href="./chart.html" class="top4">Top 4 the highest admission rate degree for international student</a>
+  </section>
+
+  <!-- <section id="support" class="section">
+    <h2>Student Support</h2>
+    <ul class="support-list">
+      <li>International Welcome Week</li>
+      <li>German Language Courses</li>
+      <li>Visa & Accommodation Assistance</li>
+      <li>Buddy Program</li>
+      <li>Career & Internship Services</li>
+    </ul>
+  </section> -->
+
+  <section id="apply" class="section">
+    <h2>How to Apply</h2>
+    <ol>
+      <li>Choose your program</li>
+      <li>Prepare your documents</li>
+      <li>Submit online application</li>
+      <li>Wait for admission result</li>
+      <li>Apply for visa and prepare to move to Kiel</li>
+    </ol>
+    <button class="cta-button" onclick="window.location.href='application.html'"   >Start Application</button>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3 onclick="toggleAnswer(this)">Do I need to speak German?</h3>
+      <p class="answer">No, many programs are taught in English. However, learning German is recommended for daily life.</p>
+    </div>
+    <div class="faq-item">
+      <h3 onclick="toggleAnswer(this)">Can I work while studying?</h3>
+      <p class="answer">Yes, international students can work up to 120 full days or 240 half days per year.</p>
+    </div>
+    <div class="faq-item">
+      <h3 onclick="toggleAnswer(this)">Is Kiel an expensive city?</h3>
+      <p class="answer">Kiel is more affordable than larger German cities, with reasonable rent and living costs.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Fachhochschule Kiel<br>
+      University of Applied Sciences<br>
+      Sokratesplatz 1<br>
+      24149 Kiel</p>
+      <p>Telefon: 0431 210-0<br>
+      Telefax: 0431 210-1900<br>
+      E-Mail: info@fh-kiel.de</p>
+   
+    </div>
+
+    <div class="footer-column">
+      <h3>Faculties</h3>
+      <div class="footer-links">
+        <a href="./degree.html">Faculty of Agriculture</a>
+        <a href="./degree.html">Faculty of Computer Science and Electrical Engineering</a>
+        <a href="./degree.html">Faculty of Mechanical Engineering</a>
+        <a href="./degree.html">Faculty of Media</a>
+        <a href="./degree.html">Faculty of Social Work and Health</a>
+        <a href="./degree.html">Faculty of Business Management</a>
+        <a href="./degree.html">Faculty of Nursing and Physiotherapy</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quicklinks for Students</h3>
+      <div class="footer-links">
+        <a href="inter.html#apply">Application</a>
+        <a href="inter.html#overview">Overview</a>
+        <a href="inter.html#support">Information for internationals</a>
+        <a href="inter.html#faq">Questions</a>
+        <a href="./degree.html">Degree</a>
+        <a href="./focus.html">Moodle Teaching</a>
+        <a href="./future.html">Moodle Collaboration</a>
+        <a href="./city.html">City</a>
+        <a href="city.html#weather">Weather</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Service</h3>
+      <div class="footer-links">
+        <a href="#">Dual-study programs</a>
+        <a href="#">Disabilities and/or long-term health conditions</a>
+        <a href="#">FH Shop</a>
+        <a href="#">myuniboard</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- <script src="./inter.js"></script> -->
+</body>
+
+</html>
+
+
